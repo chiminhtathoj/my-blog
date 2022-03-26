@@ -1,0 +1,49 @@
+$font-size:20px;
+.top {
+    background-color: white;
+    height: 50px;
+    display: flex;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    
+    .top-left,.top-right {
+        display: flex;
+        justify-content: center;
+        
+        .top-right-avatar{
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }      
+        .top-left-icon{
+            margin-right: 10px;
+            font-size:$font-size ;
+            cursor: pointer;
+        }
+
+        .top-right-icon{
+            margin-left: 10px;
+            font-size: $font-size;
+            cursor: pointer;
+        }
+        
+        flex:1
+        
+    }
+    .top-center{
+        .top-center-list{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+
+            .top-list-item{
+                font-size: calc( 1.2 * #{$font-size});
+                margin-left: 20px;
+                font-weight: 600;
+            }
+        }
+        flex: 2
+    }
+}
