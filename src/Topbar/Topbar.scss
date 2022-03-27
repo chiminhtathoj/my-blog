@@ -10,6 +10,7 @@ $font-size:20px;
     .top-left,.top-right {
         display: flex;
         justify-content: center;
+        align-items: center;
         
         .top-right-avatar{
             vertical-align: middle;
@@ -33,11 +34,13 @@ $font-size:20px;
         
     }
     .top-center{
+        display: flex;
+        justify-content: center;
         .top-center-list{
             display: flex;
             list-style: none;
-            justify-content: center;
-
+            align-items: center;
+            margin: 0;
             .top-list-item{
                 font-size: calc( 1.2 * #{$font-size});
                 margin-left: 20px;
