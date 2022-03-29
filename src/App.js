@@ -1,6 +1,6 @@
 import React from "react";
-import TopBar from "./Topbar/Topbar"
-import Home from "./Pages/Home/Home";
+import TopBar from "./components/Topbar/Topbar"
+import Home from "./components/Pages/Home/Home";
 function App() {
   return (
     <>
