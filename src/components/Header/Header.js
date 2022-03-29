@@ -1,5 +1,5 @@
 import "./Header.scss"
-import imgheader from '../assets/imgHeader.jpg';
+import imgheader from '../../assets/imgHeader.jpg';
 const Header = () => {
     return (
         <div className="header">
