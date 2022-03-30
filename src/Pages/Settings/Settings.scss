@@ -1,0 +1,72 @@
+.settings {
+    display: flex;
+    .settings-wrapper {
+        flex: 9;
+        padding: 20px;
+        .settings-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .settings-update-title {
+                color: lightcoral;
+                font-size: 1.8rem;
+                margin-bottom: 12px;
+            }
+            .settings-delete-title {
+                color: red;
+            }
+        }
+        .settings-form {
+            display: flex;
+            flex-direction: column;
+            & > label {
+                margin-top: 10px;
+            }
+            & > input {
+                color: gray;
+                margin: 10px 0;
+                height: 30px;
+                border: none;
+                border-bottom: 1px solid lightgray;
+            }
+            .settings-pp {
+                display: flex;
+                & > img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+                .settings-pp-icon {
+                    background-color: lightcoral;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+                .settings-pp-label{
+                    display: flex;
+                    margin-left: 15px;
+                    align-items: center;
+                }
+                #file-input {
+                    display: none;
+                }
+            }
+            .settings-submit-button {
+                width: 100px;
+                align-self: center;
+                border: none;
+                background-color: teal;
+                color: white;
+                border-radius: 10px;
+                height: 30px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
