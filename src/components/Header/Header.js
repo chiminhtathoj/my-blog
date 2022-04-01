@@ -1,5 +1,5 @@
 import "./Header.scss"
-import imgheader from '../../assets/imgHeader.jpg';
+import imgHeader from '../../assets/imgHeader.jpg';
 const Header = () => {
     return (
         <div className="header">
@@ -13,7 +13,7 @@ const Header = () => {
                 </span>
 
             </div>
-            <img className="header-title-img" src={imgheader} alt="img header" />
+            <img className="header-title-img" src={imgHeader} alt="img header" />
         </div>
     )
 }
