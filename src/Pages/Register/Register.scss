@@ -3,6 +3,8 @@
 
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
         url("../../assets/login_background.jpg");
+    background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: center;

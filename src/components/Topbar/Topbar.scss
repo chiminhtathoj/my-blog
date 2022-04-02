@@ -1,53 +1,80 @@
-$font-size:20px;
+$font-size: 20px;
 .top {
     background-color: white;
     height: 50px;
+    padding: 10px 10vw;
     display: flex;
+    justify-content: space-around;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    z-index: 1;
-    
-    .top-left,.top-right {
+    z-index: 10;
+
+    .top-left,
+    .top-right {
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        .top-right-avatar{
+
+        .top-right-avatar {
             vertical-align: middle;
             width: 40px;
             height: 40px;
             border-radius: 50%;
-        }      
-        .top-left-icon{
+        }
+        .top-left-icon {
             margin-right: 10px;
-            font-size:$font-size ;
+            font-size: $font-size;
             cursor: pointer;
         }
 
-        .top-right-icon{
+        .top-right-icon {
             margin-left: 10px;
             font-size: $font-size;
             cursor: pointer;
         }
-        
-        flex:1
-        
-    }
-    .top-center{
-        display: flex;
-        justify-content: center;
-        .top-center-list{
+        .top-right-list {
             display: flex;
-            list-style: none;
-            align-items: center;
             margin: 0;
-            .top-list-item{
-                font-size: calc( 1.2 * #{$font-size});
+            .top-right-list-item {
+                font-size: calc(1.0 * #{$font-size});
                 margin-left: 20px;
                 font-weight: 600;
+                &,
+                &:hover,
+                &:focus,
+                &:active {
+                    text-decoration: none;
+                    color: inherit;
+                }
             }
         }
-        flex: 2
+        flex: 0.7
+    }
+    .top-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .top-center-list {
+           width: 100%;
+            display: flex; 
+            justify-content: center;
+            list-style: none;
+           
+            margin: 0;
+            .top-list-item {
+                font-size: calc(1.2 * #{$font-size});
+                margin-left: 20px;
+                font-weight: 600;
+                &,
+                &:hover,
+                &:focus,
+                &:active {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+        flex: 2;
     }
 }
